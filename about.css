@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lobster&family=Ojuju:wght@200..800&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+.navbar-brand{
+	width: 40%;
+}
+
+/* form */
+:root {
+	--color-1: #f0faff;
+	--color-2: lime;
+	--color-3: #020403;
+  
+	--fonts-1: 15px;
+	--fonts-2: 22px;
+	--fonts-3: 25px;
+  }
+  .show {
+	border: none;
+  }
+  @keyframes animate {
+	0%,
+	100% {
+	  transform: translate(-50%, -50%) scale(1);
+	}
+	50% {
+	  transform: translate(-50%, -50%) scale(1.03);
+	}
+  }
+  .pop-up {
+	display: none;
+	position: fixed;
+	top: 54%;
+	left: 50%;
+	width: 70%;
+	transform: translate(-50%, -50%) scale(1);
+	animation: animate 1s ease-in-out;
+	z-index: 99999;
+  }
+  .pop-up.active {
+	display: block;
+  }
+  .overlay {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 98;
+	width: 100%;
+	height: 100%;
+	background: rgba(2, 4, 3, 0.596);
+  }
+  .overlay.active {
+	display: block;
+  }
+  .btn{
+	width: 100%;
+	margin: 0 auto;
+	justify-content: space-between;
+  }
+  .btn button{
+	background-color: #3204ff;
+	border: none;
+	width: 45%;
+	color: #ffffff;
+	font-size: 20px;
+	border-radius: 5px;
+	padding: 6px;
+  }
+
+.pop-up{
+   z-index: 10000;
+}
+
+/* about-1 */
+
+.about-1{
+    padding: 55px 0 20px 0;
+ }
+ .img-2 img{
+     width: 100%;
+ }
+ .pe-2{
+    font-family: "EB Garamond";
+    font-size: 18px;
+ }
+
+
+ /* about-2 */
+
+ .about-2 h3{
+    font-family: "Inconsolata", monospace;
+    font-size: 40px;
+    border-bottom: 2px solid #dee2e6;
+ }
+ .about-2 h4{
+    font-family: "EB Garamond";
+    font-weight: 600;
+    font-size: 28px;
+    /* width: 30%; */
+    /* margin: 0 auto; */
+
+    /* border-bottom: 2px solid  #dee2e6 ; */
+ }
+ .about-2 ul li{
+    font-family: "EB Garamond";
+    font-size: 18px;
+
+ }
+
+ .w-i a i{
+	width: 5%;
+	right: 20px;
+	margin: 0 auto;
+	position: fixed;
+	text-align: end;
+	bottom: 30px;
+	color: green;
+   z-index: 100;
+}
+html,body{
+	overflow-x: hidden;
+}
